@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TMG College of Arts & Science</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* CSS STYLES */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html{scroll-behavior:smooth}
+body{background:#020617;color:#e5e7eb;line-height:1.6}
+.container{width:90%;max-width:1200px;margin:auto}
+
+/* HEADER */
+.header{position:fixed;width:100%;background:#020617;border-bottom:1px solid #0f172a;z-index:1000;padding:10px 0}
+.nav-container{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo img{width:55px}
+.logo-text h2{color:#38bdf8;font-size:20px;margin:0}
+.logo-text p{font-size:11px;color:#94a3b8;margin:0}
+nav{display:flex;align-items:center;gap:15px}
+nav a{color:#e5e7eb;text-decoration:none;font-size:14px;transition:.3s}
+nav a:hover{color:#38bdf8}
+.btn-small{background:#38bdf8;color:#020617;padding:6px 15px;border-radius:20px;font-weight:600}
+
+/* HERO */
+.hero{height:100vh;background:url("https://media.collegedekho.com/media/img/institute/crawled_images/TMG_College_of_Arts__ScienceChennai1.jpg") center/cover;position:relative;display:flex;align-items:center;justify-content:center;text-align:center}
+.overlay{position:absolute;inset:0;background:rgba(2,6,23,.85)}
+.hero-content{position:relative;z-index:1}
+.hero h1{font-size:45px;margin-bottom:15px}
+.hero h1 span{color:#38bdf8}
+.hero-logo{width:90px;margin-bottom:15px}
+.btn{background:#38bdf8;color:#020617;padding:12px 28px;border-radius:25px;text-decoration:none;margin:5px;display:inline-block;font-weight:600}
+.btn-outline{border:1px solid #38bdf8;padding:12px 28px;border-radius:25px;color:#38bdf8;text-decoration:none;margin:5px;display:inline-block}
+.stats{display:flex;justify-content:center;gap:40px;margin-top:30px}
+
+/* SECTIONS */
+.section{padding:80px 0}
+.section.alt{background:#0f172a}
+h2{text-align:center;font-size:36px;margin-bottom:30px}
+h2 span{color:#38bdf8}
+.center-text{text-align:center;max-width:800px;margin:0 auto 40px;color:#cbd5f5}
+
+/* GRIDS & CARDS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:#0f172a;padding:25px;border-radius:15px;text-align:center;transition:.3s;border:1px solid transparent}
+.card:hover{transform:translateY(-10px);border-color:#38bdf8}
+
+.img-card{background:#0f172a;border-radius:15px;overflow:hidden;transition:.3s;text-align:center;padding-bottom:20px}
+.img-card img{width:100%;height:200px;object-fit:cover}
+.img-card h1,.img-card h3{font-size:18px;color:#38bdf8;margin:15px 10px 5px}
+.img-card p{font-size:14px;padding:0 15px;color:#cbd5f5}
+.img-card:hover{transform:translateY(-8px);box-shadow:0 10px 30px rgba(56,189,248,.2)}
+
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.gallery-item img{width:100%;height:200px;object-fit:cover;border-radius:10px;transition:.4s}
+.gallery-item img:hover{transform:scale(1.05)}
+
+/* HANDBOOK */
+.qr-box{max-width:500px;margin:auto;text-align:center;background:#0f172a;padding:40px;border-radius:20px}
+.qr-box img{width:180px;background:#fff;padding:10px;border-radius:15px;margin-bottom:20px}
+
+/* FOOTER */
+.footer{background:#020617;padding:40px 0;text-align:center;border-top:1px solid #0f172a}
+.social-links{display:flex;justify-content:center;gap:15px;margin-top:20px}
+.social-links a{width:45px;height:45px;border-radius:50%;border:1px solid #38bdf8;color:#38bdf8;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:20px;transition:.3s}
+.social-links a:hover{background:#38bdf8;color:#020617;transform:translateY(-5px)}
+
+iframe{width:100%;height:350px;border:0;filter:invert(90%) hue-rotate(180deg)}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+<div class="container nav-container">
+<a href="index.html" class="logo">
+<img src="image/logo.png">
+<div class="logo-text">
+<h2>TMG College</h2>
+<p>Knowledge • Discipline • Excellence</p>
+</div>
+</a>
+<nav>
+<a href="#">Home</a>
+<a href="#About">About</a>
+<a href="#Courses">Courses</a>
+<a href="#Departments">Departments</a>
+<a href="#Facilities">Facilities</a>
+<a href="#Gallery">Gallery</a>
+<a href="#Contact">Contact</a>
+<a class="btn-small" href="admission.html">Apply Now</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="overlay"></div>
+<div class="container hero-content">
+<img src="image/logo.png" class="hero-logo">
+<h1>Shaping <span>Future Leaders</span> at TMG College</h1>
+<p>Empowering students through quality education and career-focused learning.</p>
+<div class="hero-btns">
+<a class="btn" href="#Courses">Explore Courses</a>
+<a class="btn-outline" href="admission.html">Apply for Admission</a>
+</div>
+<div class="stats">
+<div><h3>20+</h3><p>Years</p></div>
+<div><h3>50+</h3><p>Faculty</p></div>
+<div><h3>3000+</h3><p>Students</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="About">
+<div class="container">
+<h2>About <span>TMG College</span></h2>
+<p class="center-text">TMG College of Arts & Science is affiliated to the University of Madras and committed to academic excellence, innovation, and holistic development.</p>
+<div class="grid">
+<div class="card"><h3>Our Vision</h3><p>To create responsible citizens and leaders through education.</p></div>
+<div class="card"><h3>Our Mission</h3><p>To deliver quality education with ethical values.</p></div>
+<div class="card"><h3>Principal's Message</h3><p>We nurture talent, skills, and character for future success.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section alt" id="Courses">
+<div class="container">
+<h2>Courses <span>Offered</span></h2>
+<div class="grid">
+<div class="img-card"><img src="image/b.com-cs.jpg"><h1>B.Sc Computer Science</h1><p>3 Years | 12th Pass</p></div>
+<div class="img-card"><img src="image/bcom.jpg"><h1>B.Com</h1><p>3 Years | 12th Pass</p></div>
+<div class="img-card"><img src="image/bba.jpg"><h1>BBA</h1><p>3 Years | 12th Pass</p></div>
+<div class="img-card"><img src="image/b.sc.-maths.jpg"><h1>M.Sc Programs</h1><p>2 Years | UG Degree</p></div>
+<div class="img-card"><img src="image/b.com-cs.jpg"><h1>B.COM Corp. Secretaryship</h1><p>3 Years | 12th Pass</p></div>
+<div class="img-card"><img src="image/b.com-ism.jpg"><h1>B.COM (ISM)</h1><p>3 Years | 12th Pass</p></div>
+<div class="img-card"><img src="image/b.sc.-es.jpg"><h1>B.SC Electronic Systems</h1><p>3 Years | 12th Pass</p></div>
+<div class="img-card"><img src="image/b.sc.-hcm.png"><h1>B.SC Hospitality</h1><p>3 Years | 12th Pass</p></div>
+<div class="img-card"><img src="image/b.sc.-maths.jpg"><h1>B.SC - MATHS</h1><p>3 Years | 12th Pass</p></div>
+<div class="img-card"><img src="image/bca.jpg"><h1>BCA</h1><p>3 Years | 12th Pass</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="Departments">
+<div class="container">
+<h2>Our <span>Departments</span></h2>
+<div class="grid">
+<div class="img-card"><img src="image/p12.jpg"><h3>Computer Science</h3><p>Technology-driven education and innovation.</p></div>
+<div class="img-card"><img src="image/p14.png"><h3>Arts</h3><p>Creative education and humanities excellence.</p></div>
+<div class="img-card"><img src="image/p15.jpeg"><h3>Commerce</h3><p>Industry-oriented commerce studies.</p></div>
+<div class="img-card"><img src="image/p18.jpg"><h3>Science</h3><p>Innovative learning with modern laboratories.</p></div>
+<div class="img-card"><img src="image/p19.jpeg"><h3>Management</h3><p>Leadership and business skill development.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section alt" id="Facilities">
+<div class="container">
+<h2>Facilities & <span>Infrastructure</span></h2>
+<div class="grid">
+<div class="img-card"><img src="image/p3.PNG"><h3>Library</h3><p>Well-stocked resources.</p></div>
+<div class="img-card"><img src="image/p1.PNG"><h3>Laboratories</h3><p>Modern science and computer labs.</p></div>
+<div class="img-card"><img src="image/P5.png"><h3>Sports</h3><p>Indoor & outdoor facilities.</p></div>
+<div class="img-card"><img src="image/P2.PNG"><h3>Auditorium</h3><p>Space for events and seminars.</p></div>
+<div class="img-card"><img src="image/P6.jpeg"><h3>Transport</h3><p>College buses for city routes.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="Gallery">
+<div class="container">
+<h2>Campus <span>Gallery</span></h2>
+<div class="gallery-grid">
+<div class="gallery-item"><img src="image/p7.jpeg"></div>
+<div class="gallery-item"><img src="image/image.avif"></div>
+<div class="gallery-item"><img src="image/p10.jpeg"></div>
+<div class="gallery-item"><img src="image/p8.jpeg"></div>
+<div class="gallery-item"><img src="image/p11.jpeg"></div>
+<div class="gallery-item"><img src="image/p4.jpg"></div>
+</div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+<div class="qr-box">
+<img src="image/p20.png">
+<h2>TMG College <span>Handbook</span></h2>
+<p>Scan to get complete info about courses and academics.</p>
+<a href="#" class="btn">Download Handbook</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="Contact">
+<div class="container" style="text-align:center">
+<h2>Contact <span>& Location</span></h2>
+<p>Mudichur Road, Manimangalam, Chennai – 601301</p>
+<p>📞 <a href="tel:+919876543210" style="color:#38bdf8">+91 98765 43210</a></p>
+<p>✉️ <a href="mailto:info@tmgcollege.edu" style="color:#38bdf8">info@tmgcollege.edu</a></p>
+</div>
+</section>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.349635035!2d80.0531!3d12.9157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU0JzU2LjUiTiA4MMKwMDMnMTEuMiJF!5e0!3m2!1sen!2sin!4v1614000000000"></iframe>
+
+<footer class="footer">
+<div class="container">
+<img src="image/logo.png" style="width:60px">
+<h3>TMG College of Arts & Science</h3>
+<p>© 2026 TMG College | All Rights Reserved</p>
+<div class="social-links">
+<a href="https://www.youtube.com/@padminikothapalli6872/videos"><i class="fab fa-youtube"></i></a>
+<a href="https://www.instagram.com/tmg_official2000/"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

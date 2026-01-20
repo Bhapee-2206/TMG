@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Form | TMG College</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#020617;color:#e5e7eb}
+.container{width:90%;max-width:1100px;margin:auto}
+
+/* HEADER */
+.header{background:#020617;border-bottom:1px solid #0f172a;padding:15px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo img{width:55px}
+.logo-text h2{color:#38bdf8;font-size:20px}
+.logo-text p{font-size:11px;color:#94a3b8}
+
+/* FORM */
+.section{padding:60px 0}
+h2{text-align:center;font-size:34px}
+h2 span{color:#38bdf8}
+.center{text-align:center;color:#94a3b8;margin-bottom:40px}
+
+.form-box{
+  max-width:600px;
+  margin:auto;
+  background:#020617;
+  padding:40px;
+  border-radius:15px;
+  border:1px solid #1e293b;
+  box-shadow:0 20px 40px rgba(0,0,0,.6)
+}
+
+input,select,textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:18px;
+  border-radius:10px;
+  border:1px solid #1e293b;
+  background:#020617;
+  color:#e5e7eb
+}
+
+input:focus,select:focus,textarea:focus{
+  outline:none;
+  border-color:#38bdf8
+}
+
+button{
+  width:100%;
+  padding:14px;
+  background:#38bdf8;
+  border:none;
+  border-radius:25px;
+  font-weight:600;
+  cursor:pointer;
+  color:#020617
+}
+
+button:hover{background:#0ea5e9}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="image/logo.png">
+      <div class="logo-text">
+        <h2>TMG College</h2>
+        <p>Knowledge • Discipline • Excellence</p>
+      </div>
+    </a>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2>Admission <span>Form</span></h2>
+    <p class="center">Apply online for the academic year 2026</p>
+
+    <form class="form-box">
+      <input type="text" placeholder="Student Full Name" required>
+      <input type="date" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Mobile Number" required>
+
+      <select required>
+        <option value="">Select Course</option>
+        <option>B.Sc Computer Science</option>
+        <option>B.Com</option>
+        <option>BBA</option>
+        <option>BCA</option>
+        <option>B.Sc Mathematics</option>
+      </select>
+
+      <textarea rows="4" placeholder="Address"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
